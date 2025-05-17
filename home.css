@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Important to avoid unexpected spacing */
+    padding: 0;
+}
+
+#header {
+    margin: 0;
+    height: 12vh;
+    font-family: monospace;
+    font-size: 5vw;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    margin: 0;
+    height: 88vh;
+    background-color: palegreen;
+    justify-content: center;
+    display: flex;
+}
+
+#games {
+    margin: 0;
+    width: 960px;
+    max-width: 95%;
+    background-color: rgb(95, 95, 255);
+    display: flex;
+    padding: 0;
+}
+
+.game {
+    margin: 5%;
+    width: 50%;
+    max-width: 95%;
+    height: 20vh;
+    background-color: blueviolet;
+}
