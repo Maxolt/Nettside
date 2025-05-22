@@ -3,9 +3,16 @@ html, body {
     width: 100%;
     margin: 0; /* Important to avoid unexpected spacing */
     padding: 0;
+    max-width: 100%;
 }
 
+
 #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100vw;
     margin: 0;
     height: 12vh;
     font-family: monospace;
@@ -15,25 +22,34 @@ html, body {
 
 main {
     margin: 0;
-    height: 88vh;
+    padding-top: 12vh;
     background-color: palegreen;
     justify-content: center;
     display: flex;
+    height: 100%;
+    max-width: 100vw;
 }
 
 #games {
     margin: 0;
+    height: 100%;
     width: 960px;
     max-width: 95%;
     background-color: rgb(95, 95, 255);
     display: flex;
+    flex-wrap: wrap; /* Allow children to wrap to the next line */
     padding: 0;
+    justify-content: center;
 }
 
+
 .game {
-    margin: 5%;
-    width: 50%;
-    max-width: 95%;
+    font-size: 50px;
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: 900;
+    width: 45%;
+    margin: 1%;
     height: 20vh;
     background-color: blueviolet;
+    border-radius: 15px;
 }
