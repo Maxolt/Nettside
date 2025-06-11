@@ -5,35 +5,50 @@ html, body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 #header {
     margin: 0;
     height: 12vh;
     font-family: monospace;
-    font-size: 5vw;
+    font-size: 5em;
     background-color: rgb(255, 255, 255);
 }
 
 main {
     margin: 0;
     height: 88vh;
-    background-color: palegreen;
+    background: linear-gradient(to bottom right, blue, rgb(173, 57, 255));
     justify-content: center;
     display: flex;
 }
 
 #games {
     margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     width: 960px;
     max-width: 95%;
-    background-color: rgb(95, 95, 255);
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
-}
+    background-color: rgba(188, 188, 188, 0.5);
+    gap: 10px; /* Add spacing between items */
+    justify-content: center;
+    padding: 10px;
 
+}
 .game {
-    margin: 5%;
-    width: 50%;
-    max-width: 95%;
-    height: 20vh;
+    opacity: 100%;
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    width: 300px; /* Reduce width to fit more items in a row */
+    height: 200px;
     background-color: blueviolet;
+    border-radius: 10px;
 }

@@ -1,3 +1,3 @@
 let $ = (id) => document.getElementById(id)
 
-$("button").onclick = () => window.location.href = "/button/button.html";
+$("button").onclick = () => window.location.href = "games/button/index.html";
